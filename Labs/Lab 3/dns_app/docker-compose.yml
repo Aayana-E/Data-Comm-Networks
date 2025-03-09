@@ -1,0 +1,14 @@
+version: '3'
+services:
+  us:
+    build: ./US
+    ports:
+      - "8080:8080"
+  fs:
+    build: ./FS
+    ports:
+      - "9090:9090"
+  as:
+    build: ./AS
+    ports:
+      - "53533:53533/udp"
